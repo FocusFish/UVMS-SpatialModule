@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>fish.focus.uvms.maven</groupId>
 		<artifactId>uvms-pom</artifactId>
-		<version>3.8</version>
+		<version>3.16</version>
 	</parent>
 
-    <groupId>eu.europa.ec.fisheries.uvms.spatialSwe</groupId>
-    <artifactId>spatialSwe</artifactId>
-    <version>2.2.11-UVMS-SNAPSHOT</version>
+    <groupId>fish.focus.uvms.spatial</groupId>
+    <artifactId>spatial</artifactId>
+    <version>2.2.11</version>
     <packaging>pom</packaging>
     <description>Maven project-archetype for UnionVms modules</description>
 
@@ -21,20 +21,16 @@
         <docker.liquibase.changeLogFile>LIQUIBASE/changelog/db-changelog-master.xml</docker.liquibase.changeLogFile>
         <docker.liquibase.db.user>spatial</docker.liquibase.db.user>
         <docker.liquibase.db.passwd>spatial</docker.liquibase.db.passwd>
-        <reporting.model>1.1.27-UVMS</reporting.model>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <movement.model.version>5.6.8-UVMS</movement.model.version>
         <geotools.version>22.2</geotools.version>
-        <uvms.commons.version>4.1.11</uvms.commons.version>
-        <usm4uvms.version>4.1.9</usm4uvms.version>
-        <fish.focus.parent.version>3.8</fish.focus.parent.version>
+        <uvms.commons.version>4.1.12</uvms.commons.version>
+        <usm4uvms.version>4.1.10</usm4uvms.version>
+        <fish.focus.parent.version>3.16</fish.focus.parent.version>
         <usm_deployment_descriptor_force_update>false</usm_deployment_descriptor_force_update>
-        <release.branch.name>uvms-1.0.0</release.branch.name>
-        <maven.scm.provider.version>2.1.1</maven.scm.provider.version>
-        <uvms.config.version>4.1.5</uvms.config.version>
-        <database.dialect>postgres</database.dialect>
-        <scm.connection>scm:git:https://github.com/UnionVMS/UVMS-SpatialModule-APP.git</scm.connection>
+        <uvms.config.version>4.1.6</uvms.config.version>
+        <scm.connection>scm:git:https://github.com/FocusFish/UVMS-SpatialModule.git</scm.connection>
         <installAtEnd>false</installAtEnd>
 
     </properties>
@@ -81,37 +77,19 @@
             </dependency>
 
             <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms</groupId>
+                <groupId>fish.focus.uvms.lib</groupId>
                 <artifactId>uvms-config</artifactId>
                 <version>${uvms.config.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>eu.europa.ec.fisheries.uvms</groupId>
-                        <artifactId>uvms-commons</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms</groupId>
+                <groupId>fish.focus.uvms.lib</groupId>
                 <artifactId>usm4uvms</artifactId>
                 <version>${usm4uvms.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms.reporting</groupId>
-                <artifactId>reporting-model</artifactId>
-                <version>${reporting.model}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms.spatialSwe</groupId>
+                <groupId>fish.focus.uvms.spatial</groupId>
                 <artifactId>spatial-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -135,7 +113,7 @@
             </dependency>
 
             <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+                <groupId>fish.focus.uvms.commons</groupId>
                 <artifactId>uvms-commons-date</artifactId>
                 <version>${uvms.commons.version}</version>
             </dependency>

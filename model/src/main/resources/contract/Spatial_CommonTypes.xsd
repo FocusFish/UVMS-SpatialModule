@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<xs:schema xmlns="http://europa.eu/ec/fisheries/uvms/spatial/model/schemas" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+<xs:schema xmlns="http://focus.fish/uvms/spatial/model/schemas" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
            elementFormDefault="qualified" id="FISH2015_SPATIAL2015"
-           targetNamespace="http://europa.eu/ec/fisheries/uvms/spatial/model/schemas" version="1.0" jaxb:version="2.1"
+           targetNamespace="http://focus.fish/uvms/spatial/model/schemas" version="1.0" jaxb:version="2.1"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="Spatial_SimpleTypes.xsd"/>
     <xs:complexType name="AreaTypeEntry">
