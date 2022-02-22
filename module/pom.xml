@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spatialSwe-module</artifactId>
-    <name>spatialSwe-module</name>
+    <artifactId>spatial-module</artifactId>
+    <name>spatial-module</name>
     <packaging>war</packaging>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.spatialSwe</groupId>
-        <artifactId>spatialSwe</artifactId>
+        <groupId>fish.focus.uvms.spatial</groupId>
+        <artifactId>spatial</artifactId>
         <version>2.2.11-UVMS-SNAPSHOT</version>
     </parent>
 
@@ -32,11 +32,11 @@
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms</groupId>
+            <groupId>fish.focus.uvms.lib</groupId>
             <artifactId>uvms-config</artifactId>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms</groupId>
+            <groupId>fish.focus.uvms.lib</groupId>
             <artifactId>usm4uvms</artifactId>
         </dependency>
         <dependency>
@@ -48,12 +48,12 @@
             <artifactId>movement-model</artifactId>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-rest</artifactId>
             <version>${uvms.commons.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-date</artifactId>
         </dependency>
         <dependency>
@@ -111,7 +111,7 @@
                     </webResources>
                     <archive>
                         <manifestEntries>
-                            <Logging-Profile>spatialSwe</Logging-Profile>
+                            <Logging-Profile>spatial</Logging-Profile>
                         </manifestEntries>
                     </archive>
                     <attachClasses>true</attachClasses>
