@@ -21,7 +21,6 @@
         <docker.liquibase.changeLogFile>LIQUIBASE/changelog/db-changelog-master.xml</docker.liquibase.changeLogFile>
         <docker.liquibase.db.user>spatial</docker.liquibase.db.user>
         <docker.liquibase.db.passwd>spatial</docker.liquibase.db.passwd>
-        <reporting.model>1.1.27-UVMS</reporting.model>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <movement.model.version>5.6.8-UVMS</movement.model.version>
@@ -30,10 +29,7 @@
         <usm4uvms.version>4.1.10</usm4uvms.version>
         <fish.focus.parent.version>3.16</fish.focus.parent.version>
         <usm_deployment_descriptor_force_update>false</usm_deployment_descriptor_force_update>
-        <release.branch.name>uvms-1.0.0</release.branch.name>
-        <maven.scm.provider.version>2.1.1</maven.scm.provider.version>
         <uvms.config.version>4.1.6</uvms.config.version>
-        <database.dialect>postgres</database.dialect>
         <scm.connection>scm:git:https://github.com/FocusFish/UVMS-SpatialModule.git</scm.connection>
         <installAtEnd>false</installAtEnd>
 
@@ -90,12 +86,6 @@
                 <groupId>fish.focus.uvms.lib</groupId>
                 <artifactId>usm4uvms</artifactId>
                 <version>${usm4uvms.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>eu.europa.ec.fisheries.uvms.reporting</groupId>
-                <artifactId>reporting-model</artifactId>
-                <version>${reporting.model}</version>
             </dependency>
 
             <dependency>
