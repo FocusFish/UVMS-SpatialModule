@@ -20,7 +20,6 @@ public class SpatialRestExceptionMapper implements ExceptionMapper<Exception> {
 
     @Override
     public Response toResponse(Exception exception) {
-
         AppError error = new AppError(500, ExceptionUtils.getRootCauseMessage(exception));
         return Response.ok(error).header("MDC", MDC.get("requestId")).build();
 
