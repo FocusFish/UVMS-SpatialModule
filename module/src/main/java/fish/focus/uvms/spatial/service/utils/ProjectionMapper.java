@@ -10,9 +10,13 @@ public class ProjectionMapper {
     public static List<ProjectionDto> mapToProjectionDto(List<ProjectionEntity> entityList){
         List<ProjectionDto> dtoList = new ArrayList<>();
         for (ProjectionEntity entity:entityList) {
-            dtoList.add(new ProjectionDto(entity.getId(), entity.getName(), entity.getSrsCode(), entity.getUnits(), entity.getFormats(), entity. getWorld(), entity.getExtent()));
+            dtoList.add(mapToProjectionDto(entity));
         }
 
         return dtoList;
+    }
+
+    public static ProjectionDto mapToProjectionDto(ProjectionEntity projection) {
+        return new ProjectionDto(projection.getId(), projection.getName(), projection.getSrsCode(), projection.getUnits(), projection.getFormats(), projection.getWorld(), projection.getExtent());
     }
 }

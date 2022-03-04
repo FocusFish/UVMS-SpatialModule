@@ -10,7 +10,6 @@ details. You should have received a copy of the GNU General Public License along
  */
 package fish.focus.uvms.spatial.service.dao;
 
-import org.hibernate.Session;
 import fish.focus.uvms.spatial.service.entity.ProjectionEntity;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,23 +20,18 @@ import java.util.List;
 @Stateless
 public class ProjectionDao {
 
-   @PersistenceContext
+    @PersistenceContext
     private EntityManager em;
 
 
     public List<ProjectionEntity> findBySrsCode(Integer srsCode)  {
-
-            TypedQuery<ProjectionEntity> query = em.createNamedQuery(ProjectionEntity.FIND_BY_SRS_CODE, ProjectionEntity.class);
-            query.setParameter("srsCode",srsCode);
-            return   query.getResultList();
+        TypedQuery<ProjectionEntity> query = em.createNamedQuery(ProjectionEntity.FIND_BY_SRS_CODE, ProjectionEntity.class);
+        query.setParameter("srsCode",srsCode);
+        return   query.getResultList();
     }
 
-    public List<ProjectionEntity> findProjectionById(Long id) {
-
-        TypedQuery<ProjectionEntity> query = em.unwrap(Session.class).getNamedQuery(ProjectionEntity.FIND_PROJECTION_BY_ID);
-        query.setParameter("id",id);
-        return query.getResultList();
-
+    public ProjectionEntity findProjectionById(Long id) {
+        return em.find(ProjectionEntity.class, id);
     }
 
     public List<ProjectionEntity> findAll(){
