@@ -1,8 +1,8 @@
 package fish.focus.uvms.spatial.rest.resources.unsecured;
 
-import eu.europa.ec.fisheries.schema.movement.v1.MovementPoint;
-import eu.europa.ec.fisheries.schema.movement.v1.MovementType;
-import eu.europa.ec.fisheries.schema.movement.v1.SegmentCategoryType;
+import fish.focus.schema.movement.v1.MovementPoint;
+import fish.focus.schema.movement.v1.MovementType;
+import fish.focus.schema.movement.v1.SegmentCategoryType;
 import fish.focus.uvms.commons.date.JsonBConfigurator;
 import fish.focus.uvms.spatial.model.schemas.GeometryByPortCodeRequest;
 import fish.focus.uvms.spatial.model.schemas.GeometryByPortCodeResponse;
