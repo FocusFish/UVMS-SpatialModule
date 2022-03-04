@@ -16,6 +16,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import fish.focus.uvms.spatial.service.entity.ProjectionEntity;
 import fish.focus.uvms.spatial.service.entity.ReportConnectSpatialEntity;
 import java.util.List;
 
@@ -29,8 +30,11 @@ public class ReportConnectSpatialDao {
 
 
     public ReportConnectSpatialEntity find(Long reportId)  {
-
         return em.find(ReportConnectSpatialEntity.class,reportId);
+    }
+
+    public ReportConnectSpatialEntity merge(ReportConnectSpatialEntity report) {
+        return em.merge(report);
     }
 
     public List<ReportConnectSpatialEntity> findByConnectId(Long id)  {
@@ -57,9 +61,9 @@ public class ReportConnectSpatialDao {
         query.executeUpdate();
     }
 
-    public List<ReportConnectSpatialEntity> findProjectionByMap(long reportId) {
+    public List<ProjectionEntity> findProjectionByMap(long reportId) {
 
-        TypedQuery<ReportConnectSpatialEntity> query = em.createNamedQuery(ReportConnectSpatialEntity.FIND_MAP_PROJ_BY_ID, ReportConnectSpatialEntity.class);
+        TypedQuery<ProjectionEntity> query = em.createNamedQuery(ReportConnectSpatialEntity.FIND_MAP_PROJ_BY_ID, ProjectionEntity.class);
         query.setParameter("reportId",reportId);
         return query.getResultList();
     }

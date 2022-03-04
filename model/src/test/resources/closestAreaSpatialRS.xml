@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:ClosestAreaSpatialRS xmlns:ns2="http://europa.eu/ec/fisheries/uvms/spatial/model/schemas">
+<ns2:ClosestAreaSpatialRS xmlns:ns2="http://focus.fish/uvms/spatial/model/schemas">
     <ClosestArea>
         <ns2:ClosestArea>
             <ns2:Id>2</ns2:Id>
