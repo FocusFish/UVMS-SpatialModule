@@ -23,7 +23,7 @@
         </init-param>
         <init-param>
             <param-name>storage-directory</param-name>
-            <param-value>javamelody-spatialswe</param-value>
+            <param-value>javamelody-spatial</param-value>
         </init-param>
         <init-param>
             <param-name>datasources</param-name>
