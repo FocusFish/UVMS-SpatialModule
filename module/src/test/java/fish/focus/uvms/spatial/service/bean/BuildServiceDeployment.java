@@ -17,7 +17,9 @@ public abstract class BuildServiceDeployment {
 
             WebArchive testWar = ShrinkWrap.create(WebArchive.class, "test.war");
 
-            File[] files = Maven.configureResolver().withMavenCentralRepo(false).loadPomFromFile("pom.xml")
+            File[] files = Maven.configureResolver()
+                    .workOffline().withMavenCentralRepo(false)
+                    .loadPomFromFile("pom.xml")
                     .importRuntimeAndTestDependencies()
                     .resolve()
                     .withTransitivity().asFile();
