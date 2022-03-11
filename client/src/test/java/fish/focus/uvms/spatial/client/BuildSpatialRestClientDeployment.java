@@ -15,7 +15,9 @@ public abstract class BuildSpatialRestClientDeployment {
     public static Archive<?> createDeployment() {
         WebArchive testWar = ShrinkWrap.create(WebArchive.class, "spatial.war");
 
-        File[] files = Maven.configureResolver().loadPomFromFile("pom.xml")
+        File[] files = Maven.configureResolver()
+                .workOffline().withMavenCentralRepo(false)
+                .loadPomFromFile("pom.xml")
                 .resolve("fish.focus.uvms.spatial:spatial-module:jar:classes:?")
                 .withTransitivity().asFile();
 
