@@ -23,7 +23,7 @@
         <docker.liquibase.db.passwd>spatial</docker.liquibase.db.passwd>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <movement.model.version>5.6.11</movement.model.version>
+        <movement.model.version>5.6.12</movement.model.version>
         <geotools.version>22.2</geotools.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <uvms.commons.version>4.1.12</uvms.commons.version>
