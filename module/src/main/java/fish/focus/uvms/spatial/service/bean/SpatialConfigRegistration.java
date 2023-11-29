@@ -33,7 +33,7 @@ public class SpatialConfigRegistration implements ConfigHelper {
 
     @Override
     public String getModuleName() {
-        return "spatialSwe";
+        return "spatial";
     }
 
     @Override

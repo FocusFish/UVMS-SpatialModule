@@ -5,7 +5,7 @@
     <parent>
         <groupId>fish.focus.uvms.spatial</groupId>
         <artifactId>spatial</artifactId>
-        <version>2.2.12</version>
+        <version>2.2.13</version>
 	</parent>
     
     <artifactId>spatial-model</artifactId>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>3.14.0</version>
         </dependency>
 
         <dependency>
@@ -55,7 +55,7 @@
                     <plugin>
                         <groupId>org.jvnet.jaxb2.maven2</groupId>
                         <artifactId>maven-jaxb2-plugin</artifactId>
-                        <version>0.14.0</version>
+                        <version>0.15.3</version>
                         <executions>
                             <execution>
                                 <phase>generate-sources</phase>
