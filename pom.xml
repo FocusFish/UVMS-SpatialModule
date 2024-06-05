@@ -28,7 +28,7 @@
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <uvms.commons.version>4.1.15</uvms.commons.version>
         <usm4uvms.version>4.1.12</usm4uvms.version>
-        <fish.focus.parent.version>3.21</fish.focus.parent.version>
+        <fish.focus.parent.version>3.22</fish.focus.parent.version>
         <usm_deployment_descriptor_force_update>false</usm_deployment_descriptor_force_update>
         <uvms.config.version>4.1.6</uvms.config.version>
         <scm.connection>scm:git:https://github.com/FocusFish/UVMS-SpatialModule.git</scm.connection>
