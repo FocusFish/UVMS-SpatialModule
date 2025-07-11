@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-	
+
     <artifactId>liquibase</artifactId>
 	<name>${project.artifactId}</name>
     <packaging>pom</packaging>
-   
+
     <parent>
         <groupId>fish.focus.uvms.spatial</groupId>
         <artifactId>spatial</artifactId>
@@ -111,7 +111,7 @@
 			<properties>
 				<db.docker.url>offline:postgresql?version=9&amp;changeLogFile=target/databasechangelog.csv&amp;outputLiquibaseSql=true</db.docker.url>
 			</properties>
-		</profile>                               
+		</profile>
     </profiles>
     <build>
         <pluginManagement>
@@ -184,7 +184,7 @@
                         <version>${project.version}</version>
                         <file>target/liquibase.zip</file>
                     </configuration>
-                </plugin>        	
+                </plugin>
         </plugins>
     </build>
 </project>

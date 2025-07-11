@@ -10,6 +10,7 @@
 
     <groupId>fish.focus.uvms.spatial</groupId>
     <artifactId>spatial</artifactId>
+    <name>spatial</name>
     <version>2.2.14-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Maven project-archetype for UnionVms modules</description>
